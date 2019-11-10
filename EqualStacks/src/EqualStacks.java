@@ -86,30 +86,80 @@ public class EqualStacks
 			indexC++;
 		}
 		
-		if(h1.length < h2.length && h1.length < h3.length)
+		/*for(int i = 0; i < h2.length; i++)
 		{
+	
+		System.out.print(copyB[i]);
+		}*/
+		
+		if(h1.length <= h2.length && h1.length <= h3.length)
+		{
+			//System.out.println(1);
 			for(int i = 0; i < h1.length; i++)
 			{
-				
+				for(int j = 0; j < h2.length; j++)
+				{
+					if(copyA[i] == copyB[j])
+					{
+						for(int k = 0; k < h3.length; k++)
+						{
+							if(copyB[j] == copyC[k])
+							{
+								return copyA[i];
+							}
+						}
+					}
+				}
 			}
 		}
-		
-		if(h2.length < h1.length && h2.length < h3.length)
+		else if(h2.length <= h1.length && h2.length <= h3.length)
 		{
+			
 			for(int i = 0; i < h2.length; i++)
 			{
 				
+				for(int j = 0; j < h1.length; j++)
+				{
+					//System.out.println(h1[j] + ":" + h2[i]);
+					if(copyB[i] == copyA[j])
+					{
+						
+						for(int k = 0; k < h3.length; k++)
+						{
+							
+							if(copyA[j] == copyC[k])
+							{
+								
+								return copyB[i];
+							}
+						}
+					}
+				}
+			}
+		}
+		else if(h3.length <= h1.length && h3.length <= h2.length)
+		{
+			//System.out.println(3);
+			for(int i = 0; i < h3.length; i++)
+			{
+				for(int j = 0; j < h1.length; j++)
+				{
+					if(copyC[i] == copyA[j])
+					{
+						for(int k = 0; k < h2.length; k++)
+						{
+							if(copyA[j] == copyB[k])
+							{
+								return copyC[i];
+							}
+						}
+					}
+				}
 			}
 		}
 		
-		if(h3.length < h1.length && h3.length < h2.length)
-		{
-			for(int i = 0; i < h3.length; i++)
-			{
-				
-			}
-		}
-		return 1;
+		
+		return 0;
 	}
 	
 	
@@ -184,15 +234,15 @@ public class EqualStacks
 
 	public static void main(String[] args) 
 	{
-		int [] h1 = {3, 2, 1, 1, 1};
-		int [] h2 = {4, 3, 2};
-		int [] h3 = {1, 1, 4, 1,};
+		int [] h1 = { 1};
+		int [] h2 =  {1};
+		int [] h3 = {1};
 		
 		int check = 0;
 		
 		check = equalStacks(h1, h2, h3);
 		
-		//System.out.println(check);
+		System.out.println(check);
 		
 
 	}
