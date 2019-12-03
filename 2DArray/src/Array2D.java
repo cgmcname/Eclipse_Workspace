@@ -30,52 +30,25 @@ public class Array2D
 			
 			for(int j = 0; j < arr[i].length; j++)
 			{
-				//count = 3;
+				
 				
 				if (j+2 < arr[i].length)
 				{
-					
-					/*	System.out.print(arr[i][j]);
-						System.out.print(arr[i][j+1]);
-						System.out.print(arr[i][j+2]);
-					
-					//System.out.print(arr[i][j]);
-					System.out.println();
-					System.out.print(" " + arr[i+1][j+1]);
-					System.out.println();
-					
-					System.out.print(arr[i+2][j]);
-					System.out.print(arr[i+2][j+1]);
-					System.out.print(arr[i+2][j+2]);
-					System.out.println();*/
-					
 					save = 	arr[i][j] + arr[i][j+1] + arr[i][j+2] + arr[i+1][j+1] + arr[i+2][j]
 							+ arr[i+2][j+1] + arr[i+2][j+2];
-					
-					//
 					
 					total = Math.max(total, save);
 				}
 				
 				
-				//System.out.println();
-				//System.out.println();
+				
 			}
 			
-			//System.out.println("out");
-			//System.out.println();
+			
 		}
 				
 				
-				
-				
-				
-				
-		System.out.println(total);	
+				System.out.println(total);	
 					
-				
-				
-				
-		
 	}
 }
