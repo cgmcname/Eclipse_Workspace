@@ -71,7 +71,7 @@ public class BetweenTwoSets
 	   {
 		   if(gcd % lcm == 0)
 		   {
-			   //System.out.println( "gcd :" + gcd);
+			   
 			   System.out.println(lcm);
 			   factors++;
 		   }
@@ -81,7 +81,7 @@ public class BetweenTwoSets
 		
 		
 		System.out.println(factors);
-		//return factors;
+		
 		
 	}
 	
