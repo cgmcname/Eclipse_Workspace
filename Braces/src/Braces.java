@@ -2,49 +2,40 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-public class Braces 
-{
-	
-	static boolean compare(char one, char two)
-	{
-		if (one == '}')
-		{
-			if (two == '{')
-			{
+public class Braces {
+
+	static boolean compare(char one, char two) {
+		if (one == '}') {
+			if (two == '{') {
 				return true;
 			}
 		}
-		
-		if (one == ']')
-		{
-			if (two == '[')
-			{
+
+		if (one == ']') {
+			if (two == '[') {
 				return true;
 			}
 		}
-		
-		if (one == ')')
-		{
-			if (two == '(')
-			{
+
+		if (one == ')') {
+			if (two == '(') {
 				return true;
 			}
 		}
-		
+
 		return false;
 	}
 
-	public static void main(String[] args) 
-	{
-		String[] values = {"{[(])}" ,"{{}[](){[()]}", "{[()]}"};
-		
-		//"{}[]()", "{[()]}"
-		//String[] list = new String [values.length];
-		
+	public static void main(String[] args) {
+		String[] values = { "{[(])}", "{{}[](){[()]}", "{[()]}" };
+
+		// "{}[]()", "{[()]}"
+		// String[] list = new String [values.length];
+
 		List<String> arr = new ArrayList<String>();
-		
+
 		Stack<Character> stack = new Stack<Character>();
-		
+
 		boolean isRight = true;
 		
 		
