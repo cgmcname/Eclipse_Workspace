@@ -30,13 +30,16 @@ public class Array2D
 			
 			for(int j = 0; j < arr[i].length; j++)
 			{
-				//count = 3;
+				
 				
 				if (j+2 < arr[i].length)
 				{
+<<<<<<< HEAD
 					
 					
 					
+=======
+>>>>>>> refs/remotes/origin/master
 					save = 	arr[i][j] + arr[i][j+1] + arr[i][j+2] + arr[i+1][j+1] + arr[i+2][j]
 							+ arr[i+2][j+1] + arr[i+2][j+2];
 					
@@ -47,19 +50,15 @@ public class Array2D
 				
 			}
 			
+<<<<<<< HEAD
 		
+=======
+			
+>>>>>>> refs/remotes/origin/master
 		}
 				
 				
-				
-				
-				
-				
-		System.out.println(total);	
+				System.out.println(total);	
 					
-				
-				
-				
-		
 	}
 }

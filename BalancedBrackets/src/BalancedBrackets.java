@@ -63,8 +63,7 @@ public class BalancedBrackets
 				{
 					if(stack.isEmpty())
 					{
-						//arr.add("NO");
-						//break;
+						
 						return "NO";
 					}
 					
@@ -73,8 +72,7 @@ public class BalancedBrackets
 						isRight = compare(parse[i], stack.pop());
 						if (isRight == false)
 						{
-							//arr.add("NO");
-							//break;
+							
 							return "NO";
 						}
 					}
@@ -89,20 +87,20 @@ public class BalancedBrackets
 		
 		if(stack.isEmpty() && isRight == true)
 		{
-			//arr.add("YES");
+			
 			
 			return "YES";
 		}
 		
 		if((!(stack.isEmpty())))
 		{
-			//arr.add("NO");
+			
 			
 			return "NO";
 		}
 		
 		return "NO";
-		//System.out.println(arr);
+		
 	}
 	
 	

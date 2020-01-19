@@ -33,7 +33,7 @@ public class AppleandOrange {
 			}
 			
 			check = 0;
-			//System.out.println(appleHit);
+			
 		}
 		
 		System.out.println(appleHit);
@@ -47,7 +47,7 @@ public class AppleandOrange {
 			}
 			
 			check = 0;
-			//System.out.println(appleHit);
+			
 		}
 		
 		System.out.println(orangeHit);
